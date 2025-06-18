@@ -59,7 +59,7 @@ Use this to go from `.json` to live system in under 2 minutes.
 - Add tags: `live`, `test`, `client-name`, etc.
 - Click **Save**
 
----
+---https://github.com/Bigmannot23/operator-automations
 
 **Built by Lexvion – async systems studio**  
 Questions or requests? → [github.com/bigmannot23](https://github.com/bigmannot23)

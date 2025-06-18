@@ -1,0 +1,25 @@
+{
+  "name": "Stripe Payment Recovery System",
+  "nodes": [
+    {
+      "type": "webhook",
+      "name": "Stripe Webhook"
+    },
+    {
+      "type": "httpRequest",
+      "name": "Get Customer Details"
+    },
+    {
+      "type": "email",
+      "name": "Send Failure Email"
+    },
+    {
+      "type": "notion",
+      "name": "Log to Notion"
+    },
+    {
+      "type": "slack",
+      "name": "Notify Team"
+    }
+  ]
+}

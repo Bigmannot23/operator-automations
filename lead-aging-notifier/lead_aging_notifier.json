@@ -1,0 +1,17 @@
+{
+  "name": "Lead Aging Notifier",
+  "nodes": [
+    {
+      "type": "schedule",
+      "name": "Daily Check Trigger"
+    },
+    {
+      "type": "function",
+      "name": "Check Lead Age"
+    },
+    {
+      "type": "slack",
+      "name": "Send Reminder"
+    }
+  ]
+}

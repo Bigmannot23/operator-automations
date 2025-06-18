@@ -1,0 +1,13 @@
+{
+  "name": "Google Sheets \u2192 Notion CRM Sync",
+  "nodes": [
+    {
+      "type": "googleSheetsTrigger",
+      "name": "New Row Trigger"
+    },
+    {
+      "type": "notion",
+      "name": "Sync to Notion CRM"
+    }
+  ]
+}

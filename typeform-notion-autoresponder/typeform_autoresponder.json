@@ -1,0 +1,21 @@
+{
+  "name": "Typeform Auto-Responder",
+  "nodes": [
+    {
+      "type": "webhook",
+      "name": "Typeform Webhook"
+    },
+    {
+      "type": "function",
+      "name": "Generate Email Content"
+    },
+    {
+      "type": "email",
+      "name": "Send Email"
+    },
+    {
+      "type": "notion",
+      "name": "Log to Notion"
+    }
+  ]
+}

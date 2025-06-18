@@ -1,27 +1,45 @@
-# Operator Automations – 5-Pack Production Bundle
+---
 
-A public library of 5 operator-grade n8n automations for async ops, CRM syncs, and client workflows.  
-**Plug, play, and eliminate operational chaos in minutes.**
+## ✅ n8n Post-Import Setup Checklist
+
+Quick guide to activate this workflow after importing the `.json`.
+
+### 1️⃣ Confirm Import Success
+- Workflow appears in your n8n Workflows list
+- Name, trigger, and nodes are visible in the canvas
+
+### 2️⃣ Review & Activate Trigger
+- Ensure trigger node is present (Webhook, Schedule, Stripe, etc.)
+- For Webhooks: copy the test/live URL and configure at the source
+- For Scheduled: set interval (e.g. every 10 mins, daily)
+- Toggle workflow to **Active**
+
+### 3️⃣ Plug In Credentials
+- Resolve any red credential errors
+- Open each third-party node (Stripe, Notion, Gmail, etc.)
+- Add/select credentials from dropdown
+- Click “Test” to verify connection
+
+### 4️⃣ Test With Live Data
+- Use “Execute Workflow” or send a real webhook/form
+- Watch each node execute
+- Confirm correct behavior or inspect errors
+
+### 5️⃣ Save & Tag
+- Rename for clarity (e.g. `Stripe Recovery - Live`)
+- Add tags: `live`, `test`, `client-name`, etc.
+- Click **Save**
+
+### 6️⃣ Optional – Export or Clone
+- Use top-right `... → Export` to save a backup
+- Duplicate for variants or client installs
 
 ---
 
-## 🚀 Included Automations
+### 🔁 Fast Version (for pros)
 
-- **Stripe Payment Recovery:**  
-  Catches failed Stripe charges → emails the customer → logs to Notion → alerts Slack.
-- **Slack Standup Logger:**  
-  Posts daily Slack standup prompt → collects and parses replies → logs to Notion.
-- **Typeform → Notion Auto-Responder:**  
-  Instantly replies to Typeform leads based on service selected → logs inquiry to Notion CRM.
-- **Sheets → Notion CRM Sync:**  
-  Watches Google Sheets for new entries → syncs to Notion CRM database.
-- **Lead Aging Notifier:**  
-  Detects stale leads in Notion CRM (no updates in X days) → sends Slack reminders.
-
----
-
-## 📦 Folder Structure
-
-Each automation folder contains:
-- `README.md` (setup instructions & workflow logic)
-- `workflow.json` (importable n8n automation)
+- [ ] Import .json
+- [ ] Activate trigger (Webhook/Schedule)
+- [ ] Add credentials (Stripe, Notion, etc.)
+- [ ] Test with real data
+- [ ] Save + tag for reuse

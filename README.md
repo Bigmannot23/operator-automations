@@ -1,8 +1,37 @@
+# 🛠 Operator Automations – 5 Ready-to-Run n8n Workflows
+
+Welcome to your operator-grade automation stack.  
+This repo includes 5 fully documented, import-ready workflows for async ops, client systems, and internal workflows.
+
+---
+
+## 🚀 Included Automations
+
+### 1. **Stripe Payment Recovery**
+→ Catches failed payments, sends branded email, logs to Notion  
+📂 `/1-stripe-payment-recovery`
+
+### 2. **Slack Standup Logger**
+→ Posts daily Slack standup, logs responses to Notion  
+📂 `/2-slack-standup-logger`
+
+### 3. **Typeform Auto-Responder**
+→ Sends personalized email replies to Typeform submissions and logs them  
+📂 `/3-typeform-auto-responder`
+
+### 4. **Sheets → Notion CRM Sync**
+→ Syncs new rows in a Google Sheet to a Notion CRM database  
+📂 `/4-sheets-to-notion-crm`
+
+### 5. **Lead Aging Notifier**
+→ Scans Notion CRM for stale leads and sends Slack alerts  
+📂 `/5-lead-aging-notifier`
+
 ---
 
 ## ✅ n8n Post-Import Setup Checklist
 
-Quick guide to activate this workflow after importing the `.json`.
+Use this to go from `.json` to live system in under 2 minutes.
 
 ### 1️⃣ Confirm Import Success
 - Workflow appears in your n8n Workflows list
@@ -11,7 +40,7 @@ Quick guide to activate this workflow after importing the `.json`.
 ### 2️⃣ Review & Activate Trigger
 - Ensure trigger node is present (Webhook, Schedule, Stripe, etc.)
 - For Webhooks: copy the test/live URL and configure at the source
-- For Scheduled: set interval (e.g. every 10 mins, daily)
+- For Scheduled: set your preferred interval
 - Toggle workflow to **Active**
 
 ### 3️⃣ Plug In Credentials
@@ -30,16 +59,7 @@ Quick guide to activate this workflow after importing the `.json`.
 - Add tags: `live`, `test`, `client-name`, etc.
 - Click **Save**
 
-### 6️⃣ Optional – Export or Clone
-- Use top-right `... → Export` to save a backup
-- Duplicate for variants or client installs
-
 ---
 
-### 🔁 Fast Version (for pros)
-
-- [ ] Import .json
-- [ ] Activate trigger (Webhook/Schedule)
-- [ ] Add credentials (Stripe, Notion, etc.)
-- [ ] Test with real data
-- [ ] Save + tag for reuse
+**Built by Lexvion – async systems studio**  
+Questions or requests? → [github.com/bigmannot23](https://github.com/bigmannot23)
